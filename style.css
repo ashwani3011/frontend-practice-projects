@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #007bff;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.navbar h1 {
+  color: #fff;
+  margin: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#project-cards {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.card .developer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.card .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card p {
+  margin: 0;
+  text-align: center;
+}
+
+.card .ribbon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 0 0 5px 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.card .ribbon.easy {
+  background-color: #28a745;
+}
+
+.card .ribbon.medium {
+  background-color: #ffc107;
+}
+
+.card .ribbon.hard {
+  background-color: #dc3545;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
