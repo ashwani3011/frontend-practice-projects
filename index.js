@@ -10,7 +10,7 @@ const projects = [
   },
   {
     title: 'Guess the number',
-    link: 'project-1',
+    link: 'project-2',
     difficulty: 'medium',
     developer: 'Ashwani',
     tags: [],
